@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "git cleanup": "git fetch --prune && git branch --delete --merged"
+    "git-hard-cleanup": "git branch | grep -v \"master\" | xargs git branch -D && git fetch --prune"
   },
   "repository": {
     "type": "git",
