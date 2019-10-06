@@ -1,0 +1,19 @@
+{
+  "name": "useful-npm-scripts",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "git cleanup": "git fetch --prune && git branch --delete --merged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theDavidBarton/useful-npm-scripts.git"
+  },
+  "keywords": [
+    "npm",
+    "yarn",
+    "scripts"
+  ],
+  "author": "theDavidBarton",
+  "license": "MIT"
+}
