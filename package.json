@@ -2,9 +2,10 @@
   "name": "useful-npm-scripts",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "git-hard-cleanup": "git branch | grep -v \"master\" | xargs git branch -D && git fetch --prune",
-    "how-much-is-the-fish": "heroku ps -a [heroku-name]"
+    "how-much-is-the-fish": "heroku ps -a [heroku-name]",
+    "lint": "eslint",
+    "test": "jest --verbose --runInBand --detectOpenHandles"
   },
   "repository": {
     "type": "git",
